@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Financial - Transactions</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            <i class="bi bi-lightning-fill"></i>
+        </div>
+
+        <div>
+            <h4>Nova</h4>
+            <p>Financial</p>
+        </div>
+
+    </div>
+
+
+    <nav class="menu">
+
+        <a href="index.html">
+
+            <i class="bi bi-grid"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+        <a href="transactions.html" class="active">
+
+            <i class="bi bi-arrow-left-right"></i>
+
+            <span>Transactions</span>
+
+        </a>
+
+
+        <a href="analytics.html">
+
+            <i class="bi bi-bar-chart"></i>
+
+            <span>Analytics</span>
+
+        </a>
+
+
+        <a href="cards.html">
+
+            <i class="bi bi-credit-card"></i>
+
+            <span>My Cards</span>
+
+        </a>
+
+
+        <a href="settings.html">
+
+            <i class="bi bi-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+    </nav>
+
+
+    <!-- Premium Card -->
+
+    <div class="premium-card">
+
+        <div class="premium-icon">
+            ✦
+        </div>
+
+        <h5>
+            Upgrade to Premium
+        </h5>
+
+        <p>
+            Unlock advanced financial insights.
+        </p>
+
+        <button>
+            Upgrade
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+
+<!-- =====================================================
+     TOPBAR
+===================================================== -->
+
+<header class="topbar">
+
+    <div>
+
+        <h1>
+            Transactions
+        </h1>
+
+        <p>
+            Track all your financial activity
+        </p>
+
+    </div>
+
+
+    <div class="top-actions">
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="bi bi-search"></i>
+
+            <input
+                type="text"
+                id="topSearch"
+                placeholder="Search...">
+
+        </div>
+
+
+        <!-- Notification -->
+
+        <i class="bi bi-bell notification"></i>
+
+
+        <!-- Profile -->
+
+        <img
+            src="https://i.pravatar.cc/50?img=47"
+            class="user-image"
+            alt="Profile">
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     TRANSACTIONS PAGE
+===================================================== -->
+
+<section class="transactions-page">
+
+
+<!-- =====================================================
+     FILTER BAR
+===================================================== -->
+
+<div class="transaction-filters">
+
+
+    <!-- Search -->
+
+    <div class="transaction-search">
+
+        <i class="bi bi-search"></i>
+
+        <input
+            type="text"
+            id="transactionSearch"
+            placeholder="Search merchant or amount...">
+
+    </div>
+
+
+
+    <!-- All / Income / Expense -->
+
+    <div class="transaction-type-filter">
+
+        <button
+            class="type-button active"
+            data-type="all">
+
+            All
+
+        </button>
+
+
+        <button
+            class="type-button"
+            data-type="income">
+
+            Income
+
+        </button>
+
+
+        <button
+            class="type-button"
+            data-type="expense">
+
+            Expense
+
+        </button>
+
+    </div>
+
+
+
+    <!-- More Filters -->
+
+    <button
+        class="more-filters"
+        id="moreFiltersButton">
+
+        <i class="bi bi-funnel"></i>
+
+        More Filters
+
+    </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     TRANSACTION CARD
+===================================================== -->
+
+<div class="transaction-page-card">
+
+
+    <div class="transaction-list">
+
+
+
+        <!-- =================================================
+             SALARY
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="income"
+            data-search="salary deposit income 5200">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon income-icon">
+
+                    <i class="bi bi-briefcase"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Salary Deposit
+                    </h4>
+
+                    <p>
+                        Jan 15, 9:00 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill income">
+                    Income
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong class="income-amount">
+                    +$5,200.00
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             APPLE STORE
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="apple store shopping 999">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon shopping-icon">
+
+                    <i class="bi bi-bag"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Apple Store
+                    </h4>
+
+                    <p>
+                        Jan 15, 10:30 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill shopping">
+                    Shopping
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $999.00
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             UBER EATS
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="uber eats food 32.50">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon food-icon">
+
+                    <i class="bi bi-fork-knife"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Uber Eats
+                    </h4>
+
+                    <p>
+                        Jan 14, 7:45 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill food">
+                    Food
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $32.50
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             NETFLIX
+        ================================================= -->
+
+        <div
+            class="transaction-row highlighted"
+            data-type="expense"
+            data-search="netflix entertainment 15.99">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon entertainment-icon">
+
+                    <i class="bi bi-tv"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Netflix
+                    </h4>
+
+                    <p>
+                        Jan 14, 12:00 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill entertainment">
+                    Entertainment
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $15.99
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SHELL GAS STATION
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="shell gas station transport 65.40">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon transport-icon">
+
+                    <i class="bi bi-car-front"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Shell Gas Station
+                    </h4>
+
+                    <p>
+                        Jan 13, 4:20 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill transport">
+                    Transport
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $65.40
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             WHOLE FOODS
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="whole foods groceries 127.83">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon groceries-icon">
+
+                    <i class="bi bi-cart3"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Whole Foods
+                    </h4>
+
+                    <p>
+                        Jan 13, 11:00 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill groceries">
+                    Groceries
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $127.83
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             AMAZON
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="amazon shopping 89.99">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon shopping-icon">
+
+                    <i class="bi bi-bag"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Amazon
+                    </h4>
+
+                    <p>
+                        Jan 12, 8:15 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill shopping">
+                    Shopping
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $89.99
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FREELANCE PAYMENT
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="income"
+            data-search="freelance payment income 1500">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon income-icon">
+
+                    <i class="bi bi-briefcase"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Freelance Payment
+                    </h4>
+
+                    <p>
+                        Jan 12, 2:30 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill income">
+                    Income
+                </span>
+
+
+                <span class="status-pill pending">
+                    Pending
+                </span>
+
+
+                <strong class="income-amount">
+                    +$1,500.00
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STARBUCKS
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="starbucks food 6.75">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon food-icon">
+
+                    <i class="bi bi-fork-knife"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Starbucks
+                    </h4>
+
+                    <p>
+                        Jan 11, 7:30 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill food">
+                    Food
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $6.75
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             GYM MEMBERSHIP
+        ================================================= -->
+
+        <div
+            class="transaction-row"
+            data-type="expense"
+            data-search="gym membership health 49.99">
+
+            <div class="transaction-left">
+
+                <div class="transaction-icon health-icon">
+
+                    <i class="bi bi-heart-pulse"></i>
+
+                </div>
+
+
+                <div class="transaction-info">
+
+                    <h4>
+                        Gym Membership
+                    </h4>
+
+                    <p>
+                        Jan 10, 12:00 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-right">
+
+                <span class="category-pill health">
+                    Health
+                </span>
+
+
+                <span class="status-pill completed">
+                    Completed
+                </span>
+
+
+                <strong>
+                    $49.99
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =================================================
+       FILTER BUTTONS
+    ================================================= */
+
+    const typeButtons =
+        document.querySelectorAll(".type-button");
+
+
+    const transactionRows =
+        document.querySelectorAll(".transaction-row");
+
+
+    typeButtons.forEach(function (button) {
+
+
+        button.addEventListener("click", function () {
+
+
+            /* Remove active from all buttons */
+
+            typeButtons.forEach(function (btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+
+            /* Make clicked button active */
+
+            this.classList.add("active");
+
+
+            const selectedType =
+                this.getAttribute("data-type");
+
+
+            /* Filter transactions */
+
+            transactionRows.forEach(function (row) {
+
+
+                const rowType =
+                    row.getAttribute("data-type");
+
+
+                if (
+                    selectedType === "all" ||
+                    rowType === selectedType
+                ) {
+
+                    row.style.display = "flex";
+
+                } else {
+
+                    row.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    });
+
+
+
+    /* =================================================
+       SEARCH
+    ================================================= */
+
+    const searchInput =
+        document.getElementById("transactionSearch");
+
+
+    searchInput.addEventListener("input", function () {
+
+
+        const searchValue =
+            this.value.toLowerCase().trim();
+
+
+        transactionRows.forEach(function (row) {
+
+
+            const searchableText =
+                row.getAttribute("data-search") || "";
+
+
+            if (
+                searchableText
+                .toLowerCase()
+                .includes(searchValue)
+            ) {
+
+                row.style.display = "flex";
+
+            } else {
+
+                row.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+
+
+    /* =================================================
+       TOP SEARCH
+    ================================================= */
+
+    const topSearch =
+        document.getElementById("topSearch");
+
+
+    topSearch.addEventListener("input", function () {
+
+
+        const searchValue =
+            this.value.toLowerCase().trim();
+
+
+        if (searchValue === "") {
+
+            transactionRows.forEach(function (row) {
+
+                row.style.display = "flex";
+
+            });
+
+            return;
+
+        }
+
+
+        transactionRows.forEach(function (row) {
+
+
+            const searchableText =
+                row.getAttribute("data-search") || "";
+
+
+            if (
+                searchableText
+                .toLowerCase()
+                .includes(searchValue)
+            ) {
+
+                row.style.display = "flex";
+
+            } else {
+
+                row.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+
+
+    /* =================================================
+       MORE FILTERS
+    ================================================= */
+
+    const moreFiltersButton =
+        document.getElementById("moreFiltersButton");
+
+
+    moreFiltersButton.addEventListener("click", function () {
+
+        this.classList.toggle("active");
+
+    });
+
+
+});
+
+</script>
+
+<!-- MOBILE BOTTOM NAVIGATION -->
+
+<nav class="mobile-bottom-nav">
+
+    <a href="index.html" class="mobile-nav-item">
+        <i class="bi bi-grid"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="transactions.html" class="mobile-nav-item">
+        <i class="bi bi-arrow-left-right"></i>
+        <span>Transactions</span>
+    </a>
+
+    <a href="analytics.html" class="mobile-nav-item">
+        <i class="bi bi-bar-chart"></i>
+        <span>Analytics</span>
+    </a>
+
+    <a href="cards.html" class="mobile-nav-item">
+        <i class="bi bi-credit-card"></i>
+        <span>Cards</span>
+    </a>
+
+    <a href="settings.html" class="mobile-nav-item">
+        <i class="bi bi-gear"></i>
+        <span>Settings</span>
+    </a>
+
+</nav>
+<script>
+    // Apply saved dark mode
+    if (localStorage.getItem("novaTheme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+
+</html>

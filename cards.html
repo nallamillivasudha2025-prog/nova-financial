@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Financial - My Cards</title>
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="logo">
+
+        <div class="logo-icon">
+
+            <i class="bi bi-lightning-fill"></i>
+
+        </div>
+
+
+        <div>
+
+            <h4>Nova</h4>
+
+            <p>Financial</p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- MENU -->
+
+    <nav class="menu">
+
+
+        <a href="index.html">
+
+            <i class="bi bi-grid"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a href="transactions.html">
+
+            <i class="bi bi-arrow-left-right"></i>
+
+            <span>
+                Transactions
+            </span>
+
+        </a>
+
+
+        <a href="analytics.html">
+
+            <i class="bi bi-bar-chart"></i>
+
+            <span>
+                Analytics
+            </span>
+
+        </a>
+
+
+        <a href="cards.html" class="active">
+
+            <i class="bi bi-credit-card"></i>
+
+            <span>
+                My Cards
+            </span>
+
+        </a>
+
+
+        <a href="settings.html">
+
+            <i class="bi bi-gear"></i>
+
+            <span>
+                Settings
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+
+    <!-- PREMIUM -->
+
+    <div class="premium-card">
+
+        <div class="premium-icon">
+            ✦
+        </div>
+
+
+        <h5>
+            Upgrade to Premium
+        </h5>
+
+
+        <p>
+            Unlock advanced financial insights.
+        </p>
+
+
+        <button>
+            Upgrade
+        </button>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+
+    <!-- =================================================
+         TOP BAR
+    ================================================== -->
+
+    <header class="topbar">
+
+
+        <div>
+
+            <h1>
+                My Cards
+            </h1>
+
+            <p>
+                Manage your cards and payment methods
+            </p>
+
+        </div>
+
+
+
+        <div class="top-actions">
+
+
+            <div class="search-box">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <i class="bi bi-bell notification"></i>
+
+
+            <img
+                src="https://i.pravatar.cc/50?img=47"
+                class="user-image"
+                alt="Profile">
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+         CARDS PAGE
+    ================================================== -->
+
+    <section class="cards-page">
+
+
+        <!-- =================================================
+             YOUR CARDS
+        ================================================== -->
+
+        <div class="cards-top-section">
+
+
+            <!-- HEADING -->
+
+            <div class="section-heading">
+
+
+                <div>
+
+                    <h3>
+                        Your Cards
+                    </h3>
+
+                    <p>
+                        Manage your active cards
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="add-card-button"
+                    id="addCardButton">
+
+                    <i class="bi bi-plus-lg"></i>
+
+                    Add Card
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CARD CAROUSEL
+            ================================================== -->
+
+            <div class="saved-cards-carousel">
+
+
+                <!-- PREVIOUS -->
+
+                <button
+                    class="card-carousel-btn card-prev"
+                    id="cardPrev"
+                    type="button"
+                    aria-label="Previous card">
+
+                    <i class="bi bi-chevron-left"></i>
+
+                </button>
+
+
+
+                <!-- CAROUSEL WINDOW -->
+
+                <div class="cards-carousel-window">
+
+
+                    <!-- =========================================
+                         CARD 1
+                    ========================================== -->
+
+                    <div class="carousel-card active-card">
+
+
+                        <div class="carousel-card-top">
+
+                            <span>
+                                Nova Financial
+                            </span>
+
+                            <i class="bi bi-wifi"></i>
+
+                        </div>
+
+
+                        <div class="carousel-chip">
+
+                            <i class="bi bi-cpu"></i>
+
+                        </div>
+
+
+                        <div class="carousel-number">
+
+                            4532 8921 3456 7890
+
+                        </div>
+
+
+                        <div class="carousel-card-bottom">
+
+
+                            <div>
+
+                                <small>
+                                    CARD HOLDER
+                                </small>
+
+                                <strong>
+                                    JOHN DOE
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    EXPIRES
+                                </small>
+
+                                <strong>
+                                    08/29
+                                </strong>
+
+                            </div>
+
+
+                            <i class="bi bi-credit-card-2-front"></i>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         CARD 2
+                    ========================================== -->
+
+                    <div class="carousel-card">
+
+
+                        <div class="carousel-card-top">
+
+                            <span>
+                                Nova Financial
+                            </span>
+
+                            <i class="bi bi-wifi"></i>
+
+                        </div>
+
+
+                        <div class="carousel-chip">
+
+                            <i class="bi bi-cpu"></i>
+
+                        </div>
+
+
+                        <div class="carousel-number">
+
+                            5278 4512 9834 4321
+
+                        </div>
+
+
+                        <div class="carousel-card-bottom">
+
+
+                            <div>
+
+                                <small>
+                                    CARD HOLDER
+                                </small>
+
+                                <strong>
+                                    JOHN DOE
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    EXPIRES
+                                </small>
+
+                                <strong>
+                                    11/28
+                                </strong>
+
+                            </div>
+
+
+                            <i class="bi bi-credit-card-2-front"></i>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         CARD 3
+                    ========================================== -->
+
+                    <div class="carousel-card">
+
+
+                        <div class="carousel-card-top">
+
+                            <span>
+                                Nova Financial
+                            </span>
+
+                            <i class="bi bi-wifi"></i>
+
+                        </div>
+
+
+                        <div class="carousel-chip">
+
+                            <i class="bi bi-cpu"></i>
+
+                        </div>
+
+
+                        <div class="carousel-number">
+
+                            6011 7823 4567 2468
+
+                        </div>
+
+
+                        <div class="carousel-card-bottom">
+
+
+                            <div>
+
+                                <small>
+                                    CARD HOLDER
+                                </small>
+
+                                <strong>
+                                    JOHN DOE
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    EXPIRES
+                                </small>
+
+                                <strong>
+                                    04/30
+                                </strong>
+
+                            </div>
+
+
+                            <i class="bi bi-credit-card-2-front"></i>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- NEXT -->
+
+                <button
+                    class="card-carousel-btn card-next"
+                    id="cardNext"
+                    type="button"
+                    aria-label="Next card">
+
+                    <i class="bi bi-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CAROUSEL DOTS
+            ================================================== -->
+
+            <div class="card-carousel-dots">
+
+
+                <span
+                    class="carousel-dot active"
+                    data-card="0">
+                </span>
+
+
+                <span
+                    class="carousel-dot"
+                    data-card="1">
+                </span>
+
+
+                <span
+                    class="carousel-dot"
+                    data-card="2">
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             CARD SETTINGS + CARD DETAILS
+        ================================================== -->
+
+        <div class="cards-bottom-section">
+
+
+            <!-- =================================================
+                 CARD SETTINGS
+            ================================================== -->
+
+            <div class="card-settings">
+
+
+                <h3>
+                    Card Settings
+                </h3>
+
+
+
+                <!-- FREEZE CARD -->
+
+                <div class="card-setting-row">
+
+
+                    <div class="card-setting-left">
+
+
+                        <div class="card-setting-icon freeze-icon">
+
+                            <i class="bi bi-snow"></i>
+
+                        </div>
+
+
+                        <div class="card-setting-text">
+
+                            <h4>
+                                Freeze Card
+                            </h4>
+
+                            <p>
+                                Temporarily disable your card
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div
+                        class="card-toggle active"
+                        id="freezeToggle">
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ONLINE PAYMENTS -->
+
+                <div class="card-setting-row">
+
+
+                    <div class="card-setting-left">
+
+
+                        <div class="card-setting-icon online-icon">
+
+                            <i class="bi bi-globe"></i>
+
+                        </div>
+
+
+                        <div class="card-setting-text">
+
+                            <h4>
+                                Online Payments
+                            </h4>
+
+                            <p>
+                                Allow online transactions
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div
+                        class="card-toggle active"
+                        id="onlineToggle">
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CONTACTLESS -->
+
+                <div class="card-setting-row">
+
+
+                    <div class="card-setting-left">
+
+
+                        <div class="card-setting-icon contactless-icon">
+
+                            <i class="bi bi-wifi"></i>
+
+                        </div>
+
+
+                        <div class="card-setting-text">
+
+                            <h4>
+                                Contactless Payments
+                            </h4>
+
+                            <p>
+                                Allow contactless transactions
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div
+                        class="card-toggle active"
+                        id="contactlessToggle">
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- DAILY SPENDING LIMIT -->
+
+                <div class="spending-limit">
+
+
+                    <div class="spending-limit-header">
+
+                        <strong>
+                            Daily Spending Limit
+                        </strong>
+
+                        <span id="spendingLimitValue">
+                            $1,000
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="spending-slider"
+                        id="spendingSlider">
+
+
+                        <div
+                            class="spending-slider-progress"
+                            id="spendingProgress">
+                        </div>
+
+
+                        <div
+                            class="spending-slider-dot"
+                            id="spendingDot">
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="spending-slider-labels">
+
+                        <span>
+                            $0
+                        </span>
+
+                        <span>
+                            $2,000
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CARD DETAILS
+            ================================================== -->
+
+            <div class="card-details">
+
+
+                <h3>
+                    Card Details
+                </h3>
+
+
+
+                <div class="card-detail-row">
+
+                    <span>
+                        Card Type
+                    </span>
+
+                    <strong>
+                        Visa Debit
+                    </strong>
+
+                </div>
+
+
+
+                <div class="card-detail-row">
+
+                    <span>
+                        Card Number
+                    </span>
+
+                    <strong>
+                        •••• •••• •••• 7890
+                    </strong>
+
+                </div>
+
+
+
+                <div class="card-detail-row">
+
+                    <span>
+                        Card Holder
+                    </span>
+
+                    <strong>
+                        John Doe
+                    </strong>
+
+                </div>
+
+
+
+                <div class="card-detail-row">
+
+                    <span>
+                        Expiry Date
+                    </span>
+
+                    <strong>
+                        08/29
+                    </strong>
+
+                </div>
+
+
+
+                <div class="card-detail-row">
+
+                    <span>
+                        CVV
+                    </span>
+
+                    <strong>
+                        •••
+                    </strong>
+
+                </div>
+
+
+
+                <div class="card-detail-row">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <span class="card-status active">
+                        Active
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PAYMENT METHODS
+        ================================================== -->
+
+        <div class="payment-section">
+
+
+            <h3>
+                Payment Methods
+            </h3>
+
+
+
+            <!-- VISA -->
+
+            <div class="payment-method">
+
+
+                <div class="payment-method-left">
+
+
+                    <div class="payment-icon">
+
+                        <i class="bi bi-credit-card"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Visa •••• 7890
+                        </strong>
+
+                        <p>
+                            Primary payment method
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <span class="primary-label">
+                    Primary
+                </span>
+
+
+            </div>
+
+
+
+            <!-- MASTERCARD -->
+
+            <div class="payment-method">
+
+
+                <div class="payment-method-left">
+
+
+                    <div class="payment-icon">
+
+                        <i class="bi bi-credit-card"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Mastercard •••• 4321
+                        </strong>
+
+                        <p>
+                            Added Jul 12, 2026
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    class="set-primary"
+                    id="setPrimaryButton"
+                    type="button">
+
+                    Set Primary
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="footer">
+
+            <p>
+                © 2026 Nova Financial Dashboard. All Rights Reserved.
+            </p>
+
+        </footer>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
+<!-- MOBILE BOTTOM NAVIGATION -->
+
+<nav class="mobile-bottom-nav">
+
+    <a href="index.html" class="mobile-nav-item">
+        <i class="bi bi-grid"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="transactions.html" class="mobile-nav-item">
+        <i class="bi bi-arrow-left-right"></i>
+        <span>Transactions</span>
+    </a>
+
+    <a href="analytics.html" class="mobile-nav-item">
+        <i class="bi bi-bar-chart"></i>
+        <span>Analytics</span>
+    </a>
+
+    <a href="cards.html" class="mobile-nav-item">
+        <i class="bi bi-credit-card"></i>
+        <span>Cards</span>
+    </a>
+
+    <a href="settings.html" class="mobile-nav-item">
+        <i class="bi bi-gear"></i>
+        <span>Settings</span>
+    </a>
+
+</nav>
+<script>
+    if (localStorage.getItem("novaTheme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+</script>
+</body>
+
+</html>
