@@ -1269,3 +1269,59 @@ if (darkModeToggle) {
 
     });
 }
+/* =====================================================
+   DARK MODE - SITE WIDE
+   ===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const darkModeToggle =
+        document.getElementById("darkModeToggle");
+
+    /* Apply saved theme */
+    const savedTheme =
+        localStorage.getItem("novaTheme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+
+        if (darkModeToggle) {
+            darkModeToggle.checked = true;
+        }
+    }
+
+    /* Dark Mode Toggle */
+    if (darkModeToggle) {
+
+        darkModeToggle.addEventListener(
+            "change",
+            function () {
+
+                if (darkModeToggle.checked) {
+
+                    document.body.classList.add(
+                        "dark-mode"
+                    );
+
+                    localStorage.setItem(
+                        "novaTheme",
+                        "dark"
+                    );
+
+                } else {
+
+                    document.body.classList.remove(
+                        "dark-mode"
+                    );
+
+                    localStorage.setItem(
+                        "novaTheme",
+                        "light"
+                    );
+                }
+
+            }
+        );
+    }
+
+});
